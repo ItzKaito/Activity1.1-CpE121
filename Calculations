@@ -1,0 +1,28 @@
+package factorialcalculator;
+
+public class Calculations {
+    
+    int num1;
+    int num2;
+    
+    Calculations() {
+        this.num1 = 0;
+        this.num2 = 0;
+    }
+    
+    void calculateFac(int input) {
+        num2 = input;
+        for (int i = 1; i < num2; i++) {
+            System.out.println("The value of i; " + i);
+            input *= i;
+            num1 = input;
+        }
+        System.out.println("The Factorial of " + num2 + " is " + num1);
+    }
+    
+    void displayResult() {
+        System.out.println("The Factorial of " + num2 + " is " + num1);
+        System.out.println("The value of num1: " + num1);
+        System.out.println("The value of num2: " + num2);
+    }
+}
