@@ -1,0 +1,17 @@
+package factorialcalculator;
+
+public class FactorialCalculator {
+
+    public static void main(String[] args) {
+        Calculations ins = new Calculations();
+        int input = 5;
+        if (input < 0) {
+            System.out.println("Error!");
+        }
+        else {
+            ins.calculateFac(input);
+            ins.displayResult();
+        }
+    }
+    
+}
